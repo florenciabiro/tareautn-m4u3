@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes 2020 - 2 cuatrimetre</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="stylesheets/transportes.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+
+
+   
+</head>
+  <body>
+      
+    <header> <!-- aca no va holder -->
+        <div class="holder">
+            <img class="logo" src="images/logo.png" alt="barco logo">
+        <h1>Transportes X</h1>
+
+        </div>
+    </header>
+    
+    <nav><!-- aca no va holder!!!!!! -->
+        <!-- Paso 8
+Para destacar la sección actual, agregamos la clase activo al elemento a que
+vincula a la página actual. -->
+<!-- poner el activo  -->
+        <div class="holder">
+            <ul><!-- aca tambien puede ir holder -->
+                <li><a class="{{#if isHome}} activo {{/if}}"  href="/">Home</a></li>
+                <li><a class="{{#if isNosotros}} activo {{/if}} "  href="/nosotros">Nosotros</a></li>
+                <li><a class="{{#if isServicios}} activo {{/if}} "  href="/servicios">Servicios</a></li>
+                <li><a class="{{#if isGaleria}} activo {{/if}} "  href="/galeria">Galeria</a></li>
+                <li><a class="{{#if isNovedades}} activo {{/if}} "  href="/novedades">Novedades</a></li>
+                <li><a class="{{#if isContacto}} activo {{/if}} "  href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    {{{body}}}
+     <footer>
+        <p>Diseñado por Florencia Biro &copy;</p>
+    </footer>
+  </body>
+</html>
